@@ -1,1 +1,23 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #080b10;
+  color: #e8edf2;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: monospace;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #7dffb2;
+  font-size: 1.2rem;
+}
