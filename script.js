@@ -2,6 +2,7 @@ console.log("THE VAULT // System online");
 
 const core = document.getElementById("vaultCore");
 const systemMessage = document.getElementById("systemMessage");
+const coreAccess = document.getElementById("coreAccess");
 
 let sequenceRunning = false;
 
@@ -46,6 +47,10 @@ core.addEventListener("click", function () {
                 typeMessage("LINK ESTABLISHED", 90, function () {
 
                     core.classList.remove("activated");
+
+                    coreAccess.textContent = "> CORE READY\n> TAP TO ENTER";
+                    core.classList.add("ready");
+                    
                     sequenceRunning = false;
 
                 });
