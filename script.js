@@ -6,7 +6,12 @@ const systemMessage = document.getElementById("systemMessage");
 let sequenceRunning = false;
 
 function typeMessage(text, speed = 70, callback) {
-    systemMessage.textContent = "";
+
+    if (systemMessage.textContent !== "") {
+        systemMessage.textContent += "\n";
+    }
+
+    systemMessage.textContent += "> ";
 
     let i = 0;
 
