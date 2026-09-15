@@ -70,3 +70,23 @@ h1 {
     opacity: 1;
   }
 }
+.core.activated {
+  animation: corePulse 0.8s ease-out;
+}
+
+@keyframes corePulse {
+  0% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+
+  40% {
+    transform: scale(1.6);
+    filter: brightness(2.5);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
