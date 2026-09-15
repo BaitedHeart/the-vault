@@ -5,7 +5,7 @@ const systemMessage = document.getElementById("systemMessage");
 
 let sequenceRunning = false;
 
-function typeMessage(text, speed = 150) {
+function typeMessage(text, speed = 70, callback) {
     systemMessage.textContent = "";
 
     let i = 0;
@@ -16,6 +16,10 @@ function typeMessage(text, speed = 150) {
 
         if (i >= text.length) {
             clearInterval(typing);
+
+            if (callback) {
+                setTimeout(callback, 500);
+            }
         }
     }, speed);
 }
@@ -28,23 +32,23 @@ core.addEventListener("click", function () {
     core.classList.add("activated");
     core.textContent = "◆";
 
-    typeMessage("CORE SIGNAL DETECTED");
+    typeMessage("CORE SIGNAL DETECTED", 70, function () {
 
-    setTimeout(() => {
-    systemMessage.textContent = "SYNCING...";
-    }, 4000);
+        typeMessage("SYNCING...", 100, function () {
 
-    setTimeout(function () {
-        systemMessage.textContent = "DIGITAL SIGNATURE FOUND";
-    }, 2500);
+            typeMessage("DIGITAL SIGNATURE FOUND", 70, function () {
 
-    setTimeout(function () {
-        systemMessage.textContent = "LINK ESTABLISHED";
-    }, 3800);
+                typeMessage("LINK ESTABLISHED", 90, function () {
 
-    setTimeout(function () {
-        core.classList.remove("activated");
-        sequenceRunning = false;
-    }, 4600);
+                    core.classList.remove("activated");
+                    sequenceRunning = false;
+
+                });
+
+            });
+
+        });
+
+    });
 
 });
