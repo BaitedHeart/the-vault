@@ -5,6 +5,21 @@ const systemMessage = document.getElementById("systemMessage");
 
 let sequenceRunning = false;
 
+function typeMessage(text, speed = 45) {
+    systemMessage.textContent = "";
+
+    let i = 0;
+
+    const typing = setInterval(function () {
+        systemMessage.textContent += text.charAt(i);
+        i++;
+
+        if (i >= text.length) {
+            clearInterval(typing);
+        }
+    }, speed);
+}
+
 core.addEventListener("click", function () {
 
     if (sequenceRunning) return;
