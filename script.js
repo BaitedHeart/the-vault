@@ -1,8 +1,10 @@
-alert("THE VAULT // JavaScript connected");
+console.log("THE VAULT // System online");
+
 const core = document.getElementById("vaultCore");
 
 core.addEventListener("click", function () {
-  console.log("CORE SIGNAL DETECTED");
+    console.log("CORE SIGNAL DETECTED");
 
-  core.textContent = "◆";
+    core.classList.add("activated");
+    core.textContent = "◆";
 });
