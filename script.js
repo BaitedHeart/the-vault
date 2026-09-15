@@ -1,4 +1,4 @@
-console.log("THE VAULT // System online");
+alert("THE VAULT // JavaScript connected");
 const core = document.getElementById("vaultCore");
 
 core.addEventListener("click", function () {
