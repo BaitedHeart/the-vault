@@ -7,4 +7,8 @@ core.addEventListener("click", function () {
 
     core.classList.add("activated");
     core.textContent = "◆";
+
+    setTimeout(function () {
+        core.classList.remove("activated");
+    }, 800);
 });
