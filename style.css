@@ -94,3 +94,29 @@ h1 {
 .system-message {
     white-space: pre-line;
 }
+.core.ready {
+    cursor: pointer;
+    animation: readyPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes readyPulse {
+    0%, 100% {
+        transform: scale(1);
+        filter: brightness(1.2);
+    }
+
+    50% {
+        transform: scale(1.45);
+        filter: brightness(2);
+    }
+}
+
+.core-access {
+    white-space: pre-line;
+    min-height: 3em;
+    margin-top: 20px;
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+    color: #8fffff;
+    text-shadow: 0 0 10px #42ffff;
+}
