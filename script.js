@@ -15,9 +15,9 @@ core.addEventListener("click", function () {
 
     systemMessage.textContent = "CORE SIGNAL DETECTED";
 
-    setTimeout(function () {
-        systemMessage.textContent = "SYNCING...";
-    }, 1200);
+    setTimeout(() => {
+    systemMessage.textContent = "SYNCING...";
+}, 1200);
 
     setTimeout(function () {
         systemMessage.textContent = "DIGITAL SIGNATURE FOUND";
