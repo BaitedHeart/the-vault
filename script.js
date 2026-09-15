@@ -32,7 +32,7 @@ core.addEventListener("click", function () {
 
     setTimeout(() => {
     systemMessage.textContent = "SYNCING...";
-}, 1200);
+    }, 4000);
 
     setTimeout(function () {
         systemMessage.textContent = "DIGITAL SIGNATURE FOUND";
