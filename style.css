@@ -90,3 +90,7 @@ h1 {
     filter: brightness(1);
   }
 }
+
+.system-message {
+    white-space: pre-line;
+}
