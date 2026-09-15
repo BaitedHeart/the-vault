@@ -6,7 +6,7 @@ const systemMessage = document.getElementById("systemMessage");
 let sequenceRunning = false;
 
 function typeMessage(text, speed = 45) {
-    systemMessage.textContent = "";
+    typeMessage("CORE SIGNAL DETECTED");
 
     let i = 0;
 
