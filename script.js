@@ -6,7 +6,7 @@ const systemMessage = document.getElementById("systemMessage");
 let sequenceRunning = false;
 
 function typeMessage(text, speed = 45) {
-    typeMessage("CORE SIGNAL DETECTED");
+    systemMessage.textContent = "";
 
     let i = 0;
 
@@ -28,7 +28,7 @@ core.addEventListener("click", function () {
     core.classList.add("activated");
     core.textContent = "◆";
 
-    systemMessage.textContent = "CORE SIGNAL DETECTED";
+    typeMessage("CORE SIGNAL DETECTED");
 
     setTimeout(() => {
     systemMessage.textContent = "SYNCING...";
