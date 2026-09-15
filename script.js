@@ -5,7 +5,7 @@ const systemMessage = document.getElementById("systemMessage");
 
 let sequenceRunning = false;
 
-function typeMessage(text, speed = 45) {
+function typeMessage(text, speed = 150) {
     systemMessage.textContent = "";
 
     let i = 0;
