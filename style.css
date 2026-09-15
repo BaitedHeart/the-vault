@@ -43,10 +43,12 @@ h1 {
   font-size: 0.8rem;
 }
 
-.core {
+.vault .core {
+  display: block;
   margin: 60px 0;
 
   font-size: 5rem;
+  line-height: 1;
   color: #8fffff;
 
   text-shadow:
@@ -54,17 +56,17 @@ h1 {
     0 0 30px #42ffff,
     0 0 60px #20bcbc;
 
-  animation: pulse 2.5s ease-in-out infinite;
+  animation: vaultPulse 2.5s ease-in-out infinite;
 }
 
-@keyframes pulse {
+@keyframes vaultPulse {
   0%, 100% {
     transform: scale(1);
-    opacity: 0.7;
+    opacity: 0.55;
   }
 
   50% {
-    transform: scale(1.18);
+    transform: scale(1.35);
     opacity: 1;
   }
 }
