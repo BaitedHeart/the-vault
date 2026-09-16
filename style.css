@@ -332,3 +332,27 @@ h1 {
     drop-shadow(0 0 10px #ff7a18)
     drop-shadow(0 0 18px rgba(250, 100, 0, 0.55));
 }
+/* Courage // Holographic Shimmer */
+.crest-courage .crest-symbol img {
+  animation: courageHoloShimmer 2.8s ease-in-out infinite;
+}
+
+@keyframes courageHoloShimmer {
+  0%, 100% {
+    opacity: 0.88;
+    filter:
+      drop-shadow(0 0 2px #ffd0a3)
+      drop-shadow(0 0 5px #ff9a3d)
+      drop-shadow(0 0 10px #ff7a18)
+      drop-shadow(0 0 18px rgba(250, 100, 0, 0.45));
+  }
+
+  50% {
+    opacity: 1;
+    filter:
+      drop-shadow(0 0 3px #ffe1c2)
+      drop-shadow(0 0 7px #ffad5c)
+      drop-shadow(0 0 14px #ff7a18)
+      drop-shadow(0 0 24px rgba(250, 100, 0, 0.75));
+  }
+}
