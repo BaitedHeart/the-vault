@@ -314,3 +314,67 @@ h1 {
   width: 52px;
   height: 52px;
 }
+/* =========================
+   COURAGE HOLO // FRONT + BACK
+   ========================= */
+
+.crest-courage .crest-symbol {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.crest-courage .crest-face {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  transform-style: preserve-3d;
+}
+
+/* Vorderseite */
+.crest-courage .crest-front {
+  transform: rotateY(0deg) translateZ(2px);
+}
+
+/* Rückseite */
+.crest-courage .crest-back {
+  transform: rotateY(180deg) translateZ(2px);
+
+  opacity: 0.72;
+
+  filter:
+    drop-shadow(0 0 4px currentColor)
+    drop-shadow(0 0 10px currentColor);
+}
+/* Leuchtende Holo-Kante */
+.crest-courage .crest-symbol::after {
+  content: "";
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 3px;
+  height: 46px;
+
+  transform:
+    translate(-50%, -50%)
+    rotateY(90deg);
+
+  border-radius: 50%;
+
+  background: currentColor;
+
+  box-shadow:
+    0 0 6px currentColor,
+    0 0 14px currentColor,
+    0 0 24px currentColor;
+
+  opacity: 0.8;
+}
