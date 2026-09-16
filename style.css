@@ -763,3 +763,67 @@ h1 {
     opacity: 0.96;
   }
 }
+/* Light: echtes Wappen ohne alten Kreisrahmen */
+.crest-light .crest-symbol {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.crest-light .crest-symbol img {
+  width: 52px;
+  height: 52px;
+}
+
+/* Light // Original Pink */
+.crest-light {
+  color: #FA96FA;
+}
+/* Light // Holographic Shimmer */
+.crest-light .crest-symbol img {
+  animation: lightHoloShimmer 2.8s ease-in-out infinite;
+}
+@keyframes lightHoloShimmer {
+  0%, 100% {
+    opacity: 0.88;
+    filter:
+      drop-shadow(0 0 1px #ffe0ff)
+      drop-shadow(0 0 3px #ffc0ff)
+      drop-shadow(0 0 7px #FA96FA)
+      drop-shadow(0 0 12px rgba(250, 150, 250, 0.45));
+  }
+
+  18% {
+    opacity: 0.96;
+  }
+
+  19% {
+    opacity: 0.72;
+  }
+
+  20% {
+    opacity: 0.94;
+  }
+
+  50% {
+    opacity: 1;
+    filter:
+      drop-shadow(0 0 2px #fff0ff)
+      drop-shadow(0 0 4px #ffd1ff)
+      drop-shadow(0 0 9px #FA96FA)
+      drop-shadow(0 0 15px rgba(250, 150, 250, 0.65));
+  }
+
+  73% {
+    opacity: 1;
+  }
+
+  74% {
+    opacity: 0.78;
+  }
+
+  75% {
+    opacity: 0.96;
+  }
+}
