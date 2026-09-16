@@ -47,6 +47,7 @@ if (vaultState === "ready") {
         core.classList.remove("ready");
         core.classList.add("accessing");
         vaultState = "accessing";
+        startAccessingSequence();
         sequenceRunning = false;
     });
 
@@ -85,3 +86,19 @@ if (vaultState === "ready") {
     });
 
 });
+function startAccessingSequence() {
+    core.classList.remove("ready");
+    core.classList.add("accessing");
+
+    coreAccess.textContent = "";
+
+    setTimeout(() => {
+        typeMessage("> ACCESSING CORE...", 70, () => {
+
+            setTimeout(() => {
+                typeMessage("> IDENTITY VERIFIED", 70);
+            }, 500);
+
+        });
+    }, 400);
+}
