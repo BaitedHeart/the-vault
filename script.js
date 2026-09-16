@@ -48,6 +48,8 @@ if (vaultState === "ready") {
         core.classList.add("accessing");
         document.getElementById("crestRing").classList.add("active");
         
+        
+
         vaultState = "accessing";
         startAccessingSequence();
         sequenceRunning = false;
@@ -98,7 +100,14 @@ function startAccessingSequence() {
         typeMessage("> ACCESSING CORE...", 70, () => {
 
             setTimeout(() => {
-                typeMessage("> IDENTITY VERIFIED", 70);
+                typeMessage("> IDENTITY VERIFIED", 70, () => {setTimeout(() => {
+  typeMessage("EIGHT RESONANCES DETECTED...", 70, () => {
+    setTimeout(() => {
+      typeMessage("DIGICREST MATRIX // ONLINE", 70);
+    }, 400);
+  });
+}, 400);
+});
             }, 500);
 
         });
