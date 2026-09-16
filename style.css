@@ -379,3 +379,20 @@ h1 {
     opacity: 0.96;
   }
 }
+/* Friendship: echtes Wappen ohne alten Kreisrahmen */
+.crest-friendship .crest-symbol {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.crest-friendship .crest-symbol img {
+  width: 52px;
+  height: 52px;
+}
+
+/* Friendship // Original Blue */
+.crest-friendship {
+  color: #0164fa;
+}
