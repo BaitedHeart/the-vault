@@ -296,10 +296,9 @@ h1 {
   object-fit: contain;
 
   filter:
-    brightness(0)
-    invert(1)
-    drop-shadow(0 0 4px currentColor)
-    drop-shadow(0 0 9px currentColor);
+    filter:
+  drop-shadow(0 0 4px currentColor)
+  drop-shadow(0 0 9px currentColor);
 
   transform: translateZ(3px);
 }
@@ -339,12 +338,12 @@ h1 {
 
 /* Vorderseite */
 .crest-courage .crest-front {
-  transform: rotateY(0deg) translateZ(2px);
+  transform: rotateY(0deg) translateZ(0.75px);
 }
 
 /* Rückseite */
 .crest-courage .crest-back {
-  transform: rotateY(180deg) translateZ(2px);
+  transform: rotateY(180deg) translateZ(0.75px);
 
   opacity: 0.72;
 
@@ -377,4 +376,8 @@ h1 {
     0 0 24px currentColor;
 
   opacity: 0.8;
+}
+/* Courage // Neon-Energie */
+.crest-courage {
+  color: #ff7a18;
 }
