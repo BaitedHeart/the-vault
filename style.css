@@ -182,7 +182,6 @@ h1 {
     translateY(-130px)
     rotate(calc(-1 * var(--angle)));
 
-  animation: crestSpin 5s linear infinite;
 }
 
 /* Mut bleibt ganz oben */
@@ -201,5 +200,51 @@ h1 {
   }
   to {
     rotate: 360deg;
+  }
+}
+/* =========================
+   DIGICREST EMERGENCE
+   ========================= */
+
+.crest {
+  opacity: 0;
+  scale: 0.15;
+  transform:
+    translate(-50%, -50%)
+    rotate(var(--angle))
+    translateY(0)
+    rotate(calc(-1 * var(--angle)));
+}
+
+.crest-ring.active .crest {
+  animation:
+    crestEmerge 1.2s cubic-bezier(.2,.8,.2,1) forwards,
+    crestSpin 5s linear 1.2s infinite;
+}
+
+@keyframes crestEmerge {
+  0% {
+    opacity: 0;
+    scale: 0.15;
+    transform:
+      translate(-50%, -50%)
+      rotate(var(--angle))
+      translateY(0)
+      rotate(calc(-1 * var(--angle)));
+  }
+
+  35% {
+    opacity: 1;
+    scale: 1.25;
+  }
+
+  100% {
+    opacity: 1;
+    scale: 1;
+    transform:
+      translate(-50%, -50%)
+      rotate(var(--angle))
+      translateY(-130px)
+      rotate(calc(-1 * var(--angle)));
   }
 }
