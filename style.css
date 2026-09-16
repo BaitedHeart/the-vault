@@ -571,3 +571,20 @@ h1 {
     opacity: 0.96;
   }
 }
+/* Sincerity: echtes Wappen ohne alten Kreisrahmen */
+.crest-sincerity .crest-symbol {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.crest-sincerity .crest-symbol img {
+  width: 52px;
+  height: 52px;
+}
+
+/* Sincerity // Original Silver */
+.crest-sincerity {
+  color: #969696;
+}
