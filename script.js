@@ -5,6 +5,7 @@ const systemMessage = document.getElementById("systemMessage");
 const coreAccess = document.getElementById("coreAccess");
 
 let sequenceRunning = false;
+let vaultState = "boot";
 
 function typeMessage(text, speed = 70, callback) {
 
@@ -32,6 +33,24 @@ function typeMessage(text, speed = 70, callback) {
 
 core.addEventListener("click", function () {
 
+if (vaultState === "ready") {
+    vaultState = "access";
+    sequenceRunning = true;
+
+    coreAccess.textContent = "";
+    core.classList.remove("ready");
+    core.classList.add("activated");
+
+    systemMessage.textContent = "";
+
+    typeMessage("ACCESSING THE VAULT...", 80, function () {
+        core.classList.remove("activated");
+        sequenceRunning = false;
+    });
+
+    return;
+}
+
     if (sequenceRunning) return;
     sequenceRunning = true;
 
@@ -51,6 +70,7 @@ core.addEventListener("click", function () {
                     coreAccess.textContent = "> CORE READY\n> TAP TO ENTER";
                     core.classList.add("ready");
                     
+                    vaultState = "ready";
                     sequenceRunning = false;
 
                 });
