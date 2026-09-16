@@ -97,13 +97,14 @@ function startAccessingSequence() {
     coreAccess.textContent = "";
 
     setTimeout(() => {
-        typeMessage("> ACCESSING CORE...", 70, () => {
+        typeMessage("ACCESSING CORE...", 70, () => {
 
             setTimeout(() => {
-                typeMessage("> IDENTITY VERIFIED", 70, () => {setTimeout(() => {
-  typeMessage("EIGHT RESONANCES DETECTED...", 70, () => {
-    setTimeout(() => {
-      typeMessage("DIGICREST MATRIX // ONLINE", 70);
+                typeMessage("IDENTITY VERIFIED", 70, () => {
+                    systemMessage.textContent = "";
+                typeMessage("EIGHT RESONANCES DETECTED...", 70, () => {
+            setTimeout(() => {
+                typeMessage("DIGICREST MATRIX // ONLINE", 70);
     }, 400);
   });
 }, 400);
