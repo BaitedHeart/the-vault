@@ -44,7 +44,9 @@ if (vaultState === "ready") {
     systemMessage.textContent = "";
 
     typeMessage("ACCESSING THE VAULT...", 80, function () {
-        core.classList.remove("activated");
+        core.classList.remove("ready");
+        core.classList.add("accessing");
+        vaultState = "accessing";
         sequenceRunning = false;
     });
 
@@ -66,6 +68,7 @@ if (vaultState === "ready") {
                 typeMessage("LINK ESTABLISHED", 90, function () {
 
                     core.classList.remove("activated");
+                    core.classList.add("ready");
 
                     coreAccess.textContent = "> CORE READY\n> TAP TO ENTER";
                     core.classList.add("ready");
