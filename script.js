@@ -46,6 +46,8 @@ if (vaultState === "ready") {
     typeMessage("ACCESSING THE VAULT...", 80, function () {
         core.classList.remove("ready");
         core.classList.add("accessing");
+        document.getElementById("crestRing").classList.add("active");
+        
         vaultState = "accessing";
         startAccessingSequence();
         sequenceRunning = false;
