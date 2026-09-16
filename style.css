@@ -584,9 +584,9 @@ h1 {
   height: 52px;
 }
 
-/* Sincerity // Original Silver */
+/* Sincerity // Original Green */
 .crest-sincerity {
-  color: #969696;
+  color: #32C800;
 }
 /* Sincerity // Holographic Shimmer */
 .crest-sincerity .crest-symbol img {
@@ -596,10 +596,10 @@ h1 {
   0%, 100% {
     opacity: 0.88;
     filter:
-      drop-shadow(0 0 1px #ffffff)
-      drop-shadow(0 0 3px #e2e2e2)
-      drop-shadow(0 0 7px #b8b8b8)
-      drop-shadow(0 0 12px rgba(150, 150, 150, 0.45));
+  drop-shadow(0 0 1px #c8ffb3)
+  drop-shadow(0 0 3px #78e84f)
+  drop-shadow(0 0 7px #32C800)
+  drop-shadow(0 0 12px rgba(50, 200, 0, 0.45));
   }
 
   18% {
@@ -617,10 +617,10 @@ h1 {
   50% {
     opacity: 1;
     filter:
-      drop-shadow(0 0 2px #ffffff)
-      drop-shadow(0 0 4px #f0f0f0)
-      drop-shadow(0 0 9px #c8c8c8)
-      drop-shadow(0 0 15px rgba(150, 150, 150, 0.65));
+  drop-shadow(0 0 2px #e0ffd1)
+  drop-shadow(0 0 4px #91f06d)
+  drop-shadow(0 0 9px #32C800)
+  drop-shadow(0 0 15px rgba(50, 200, 0, 0.65));
   }
 
   73% {
