@@ -338,12 +338,12 @@ h1 {
 
 /* Vorderseite */
 .crest-courage .crest-front {
-  transform: rotateY(0deg) translateZ(0.35px);
+  transform: rotateY(0deg) translateZ(0px);
 }
 
 /* Rückseite */
 .crest-courage .crest-back {
-  transform: rotateY(180deg) translateZ(0.35px);
+  transform: rotateY(180deg) translateZ(0px);
 
   opacity: 0.72;
 
@@ -351,36 +351,8 @@ h1 {
     drop-shadow(0 0 4px currentColor)
     drop-shadow(0 0 10px currentColor);
 }
-/* Leuchtende Holo-Kante */
-.crest-courage .crest-symbol::after {
-  content: "";
-  position: absolute;
 
-  left: 50%;
-  top: 50%;
 
-  width: 2px;
-  height: 50px;
-
-  transform:
-    translate(-50%, -50%)
-    rotateY(90deg);
-
-  border-radius: 50%;
-
-  /* heißer Energiekern */
-  background: #fff3e8;
-
-  /* Neon-Orange nach außen */
-  box-shadow:
-    0 0 3px #ffffff,
-    0 0 6px #ffb05c,
-    0 0 12px #ff7a18,
-    0 0 22px #FA6400,
-    0 0 32px #FA6400;
-
-  opacity: 1;
-}
 /* Courage // Neon-Energie */
 .crest-courage {
   color: #ff7a18;
