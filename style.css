@@ -699,3 +699,67 @@ h1 {
     opacity: 0.96;
   }
 }
+/* Hope: echtes Wappen ohne alten Kreisrahmen */
+.crest-hope .crest-symbol {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.crest-hope .crest-symbol img {
+  width: 52px;
+  height: 52px;
+}
+
+/* Hope // Original Yellow */
+.crest-hope {
+  color: #FAFA02;
+}
+/* Hope // Holographic Shimmer */
+.crest-hope .crest-symbol img {
+  animation: hopeHoloShimmer 2.8s ease-in-out infinite;
+}
+@keyframes hopeHoloShimmer {
+  0%, 100% {
+    opacity: 0.88;
+    filter:
+      drop-shadow(0 0 1px #ffffb3)
+      drop-shadow(0 0 3px #ffff5c)
+      drop-shadow(0 0 7px #FAFA02)
+      drop-shadow(0 0 12px rgba(250, 250, 2, 0.45));
+  }
+
+  18% {
+    opacity: 0.96;
+  }
+
+  19% {
+    opacity: 0.72;
+  }
+
+  20% {
+    opacity: 0.94;
+  }
+
+  50% {
+    opacity: 1;
+    filter:
+      drop-shadow(0 0 2px #ffffd1)
+      drop-shadow(0 0 4px #ffff7a)
+      drop-shadow(0 0 9px #FAFA02)
+      drop-shadow(0 0 15px rgba(250, 250, 2, 0.65));
+  }
+
+  73% {
+    opacity: 1;
+  }
+
+  74% {
+    opacity: 0.78;
+  }
+
+  75% {
+    opacity: 0.96;
+  }
+}
