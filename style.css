@@ -237,7 +237,7 @@ h1 {
     inset 0 0 12px currentColor;
 
   transform-style: preserve-3d;
-  backface-visibility: hidden;
+  backface-visibility: visible;
 }
 
 /* Erst NACH dem Herausfliegen beginnt die Eigenrotation */
@@ -317,40 +317,7 @@ h1 {
    COURAGE HOLO // FRONT + BACK
    ========================= */
 
-.crest-courage .crest-symbol {
-  position: relative;
-  transform-style: preserve-3d;
-}
 
-.crest-courage .crest-face {
-  position: absolute;
-  inset: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-
-  transform-style: preserve-3d;
-}
-
-/* Vorderseite */
-.crest-courage .crest-front {
-  transform: rotateY(0deg) translateZ(0px);
-}
-
-/* Rückseite */
-.crest-courage .crest-back {
-  transform: rotateY(180deg) translateZ(0px);
-
-  opacity: 0.72;
-
-  filter:
-    drop-shadow(0 0 4px currentColor)
-    drop-shadow(0 0 10px currentColor);
-}
 
 
 /* Courage // Neon-Energie */
