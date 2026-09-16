@@ -443,3 +443,20 @@ h1 {
     opacity: 0.96;
   }
 }
+/* Love: echtes Wappen ohne alten Kreisrahmen */
+.crest-love .crest-symbol {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.crest-love .crest-symbol img {
+  width: 52px;
+  height: 52px;
+}
+
+/* Love // Original Red */
+.crest-love {
+  color: #FA0101;
+}
