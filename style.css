@@ -507,3 +507,20 @@ h1 {
     opacity: 0.96;
   }
 }
+/* Knowledge: echtes Wappen ohne alten Kreisrahmen */
+.crest-knowledge .crest-symbol {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.crest-knowledge .crest-symbol img {
+  width: 52px;
+  height: 52px;
+}
+
+/* Knowledge // Original Purple */
+.crest-knowledge {
+  color: #9601FA;
+}
