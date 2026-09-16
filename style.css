@@ -635,3 +635,20 @@ h1 {
     opacity: 0.96;
   }
 }
+/* Reliability: echtes Wappen ohne alten Kreisrahmen */
+.crest-reliability .crest-symbol {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.crest-reliability .crest-symbol img {
+  width: 52px;
+  height: 52px;
+}
+
+/* Reliability // Original Silver */
+.crest-reliability {
+  color: #969696;
+}
