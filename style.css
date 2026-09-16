@@ -324,3 +324,11 @@ h1 {
 .crest-courage {
   color: #ff7a18;
 }
+/* Courage // Holographic Aura */
+.crest-courage .crest-symbol img {
+  filter:
+    drop-shadow(0 0 2px #ffd0a3)
+    drop-shadow(0 0 5px #ff9a3d)
+    drop-shadow(0 0 10px #ff7a18)
+    drop-shadow(0 0 18px rgba(250, 100, 0, 0.55));
+}
