@@ -237,7 +237,7 @@ h1 {
     inset 0 0 12px currentColor;
 
   transform-style: preserve-3d;
-  backface-visibility: visible;
+  backface-visibility: hidden;
 }
 
 /* Erst NACH dem Herausfliegen beginnt die Eigenrotation */
@@ -302,4 +302,15 @@ h1 {
     drop-shadow(0 0 9px currentColor);
 
   transform: translateZ(3px);
+}
+/* Courage: echtes Wappen ohne alten Kreisrahmen */
+.crest-courage .crest-symbol {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.crest-courage .crest-symbol img {
+  width: 52px;
+  height: 52px;
 }
