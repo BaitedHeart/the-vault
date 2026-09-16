@@ -336,69 +336,46 @@ h1 {
 .crest-courage .crest-symbol img {
   animation: courageHoloShimmer 2.8s ease-in-out infinite;
 }
-
 @keyframes courageHoloShimmer {
   0%, 100% {
     opacity: 0.88;
     filter:
-      drop-shadow(0 0 2px #ffd0a3)
-      drop-shadow(0 0 5px #ff9a3d)
-      drop-shadow(0 0 10px #ff7a18)
-      drop-shadow(0 0 18px rgba(250, 100, 0, 0.45));
+      drop-shadow(0 0 1px #ffd0a3)
+      drop-shadow(0 0 3px #ff9a3d)
+      drop-shadow(0 0 7px #ff7a18)
+      drop-shadow(0 0 12px rgba(250, 100, 0, 0.45));
+  }
+
+  18% {
+    opacity: 0.96;
+  }
+
+  19% {
+    opacity: 0.72;
+  }
+
+  20% {
+    opacity: 0.94;
   }
 
   50% {
     opacity: 1;
     filter:
-      drop-shadow(0 0 3px #ffe1c2)
-      drop-shadow(0 0 7px #ffad5c)
-      drop-shadow(0 0 14px #ff7a18)
-      drop-shadow(0 0 24px rgba(250, 100, 0, 0.75));
-  }
-}
-/* Courage // Holographic Scanlines */
-.crest-courage .crest-symbol::before {
-  content: "";
-  position: absolute;
-  inset: -4px;
-
-  border-radius: 50%;
-  -webkit-mask-image: radial-gradient(
-    circle,
-    #000 0%,
-    #000 48%,
-    transparent 72%
-  );
-  mask-image: radial-gradient(
-    circle,
-    #000 0%,
-    #000 48%,
-    transparent 72%
-  );
-  pointer-events: none;
-
-  background: repeating-linear-gradient(
-    to bottom,
-    transparent 0px,
-    transparent 3px,
-    rgba(255, 154, 61, 0.18) 4px,
-    transparent 5px
-  );
-
-  opacity: 0.45;
-
-  filter:
-    drop-shadow(0 0 3px rgba(255, 122, 24, 0.6));
-
-  animation: courageScanlines 2.4s linear infinite;
-}
-
-@keyframes courageScanlines {
-  from {
-    background-position: 0 0;
+      drop-shadow(0 0 2px #ffe1c2)
+      drop-shadow(0 0 4px #ffad5c)
+      drop-shadow(0 0 9px #ff7a18)
+      drop-shadow(0 0 15px rgba(250, 100, 0, 0.65));
   }
 
-  to {
-    background-position: 0 20px;
+  73% {
+    opacity: 1;
+  }
+
+  74% {
+    opacity: 0.78;
+  }
+
+  75% {
+    opacity: 0.96;
   }
 }
