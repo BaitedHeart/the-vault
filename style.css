@@ -460,3 +460,50 @@ h1 {
 .crest-love {
   color: #FA0101;
 }
+/* Love // Holographic Shimmer */
+.crest-love .crest-symbol img {
+  animation: loveHoloShimmer 2.8s ease-in-out infinite;
+}
+@keyframes loveHoloShimmer {
+  0%, 100% {
+    opacity: 0.88;
+    filter:
+      drop-shadow(0 0 1px #ffb3b3)
+      drop-shadow(0 0 3px #ff5c5c)
+      drop-shadow(0 0 7px #FA0101)
+      drop-shadow(0 0 12px rgba(250, 1, 1, 0.45));
+  }
+
+  18% {
+    opacity: 0.96;
+  }
+
+  19% {
+    opacity: 0.72;
+  }
+
+  20% {
+    opacity: 0.94;
+  }
+
+  50% {
+    opacity: 1;
+    filter:
+      drop-shadow(0 0 2px #ffd1d1)
+      drop-shadow(0 0 4px #ff7a7a)
+      drop-shadow(0 0 9px #FA0101)
+      drop-shadow(0 0 15px rgba(250, 1, 1, 0.65));
+  }
+
+  73% {
+    opacity: 1;
+  }
+
+  74% {
+    opacity: 0.78;
+  }
+
+  75% {
+    opacity: 0.96;
+  }
+}
