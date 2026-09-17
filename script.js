@@ -114,3 +114,6 @@ function startAccessingSequence() {
         });
     }, 400);
 }
+core.addEventListener("click", () => {
+  alert("CORE CLICK DETECTED");
+});
