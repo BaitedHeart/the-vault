@@ -1,5 +1,4 @@
 console.log("THE VAULT // System online");
-alert("SCRIPT LOADED");
 
 const core = document.getElementById("vaultCore");
 const systemMessage = document.getElementById("systemMessage");
@@ -113,6 +112,3 @@ function startAccessingSequence() {
         });
     }, 400);
 }
-core.addEventListener("click", () => {
-  alert("CORE CLICK DETECTED");
-});
