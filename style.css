@@ -895,6 +895,6 @@ h1 {
 /* ACT II // TEMPORARY PREVIEW */
 
 body.preview-digital-world .digital-world {
-  display: block !important;
+  display: block;
 }
 
