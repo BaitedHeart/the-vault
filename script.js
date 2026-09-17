@@ -1,4 +1,5 @@
 console.log("THE VAULT // System online");
+alert("SCRIPT LOADED");
 
 const core = document.getElementById("vaultCore");
 const systemMessage = document.getElementById("systemMessage");
@@ -34,12 +35,12 @@ function typeMessage(text, speed = 70, callback) {
 core.addEventListener("click", function () {
 
 if (vaultState === "ready") {
-    vaultState = "access";
+    vaultState = "accessing";
     sequenceRunning = true;
 
     coreAccess.textContent = "";
     core.classList.remove("ready");
-    core.classList.add("activated");
+    core.classList.add("accessing");
 
     systemMessage.textContent = "";
 
