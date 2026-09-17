@@ -110,8 +110,6 @@ function startAccessingSequence() {
   });
 }, 400);
 });
-            }, 500);
-
         });
     }, 400);
 }
