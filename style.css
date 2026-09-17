@@ -892,3 +892,9 @@ h1 {
     0 0 30px currentColor;
 }
 
+/* ACT II // TEMPORARY PREVIEW */
+
+body.preview-digital-world .digital-world {
+  display: block;
+}
+
