@@ -58,6 +58,12 @@ if (vaultState === "ready") {
     return;
 }
 
+if (vaultState === "accessing") {
+    enterDigitalWorld();
+    vaultState = "digital-world";
+    return;
+}
+
     if (sequenceRunning) return;
     sequenceRunning = true;
 
@@ -119,8 +125,4 @@ function enterDigitalWorld() {
   document.body.classList.add("entering-digital-world");
   digitalWorld.setAttribute("aria-hidden", "false");
 }
-
-setTimeout(() => {
-  enterDigitalWorld();
-}, 3000);
 
