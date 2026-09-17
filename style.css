@@ -832,3 +832,6 @@ h1 {
   z-index: 100;
   pointer-events: auto;
 }
+#crestRing {
+  pointer-events: none;
+}
