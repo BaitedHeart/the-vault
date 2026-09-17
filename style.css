@@ -855,3 +855,40 @@ h1 {
   height: 100%;
 }
 
+/* DIGITAL WORLD // ENVIRONMENT */
+
+.digital-world {
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(150, 255, 245, 0.35) 0%,
+      rgba(40, 190, 180, 0.18) 28%,
+      rgba(5, 40, 45, 0.85) 70%,
+      #02090b 100%
+    );
+}
+
+.digital-world__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.digital-world__signal {
+  margin: 0 0 12px;
+  font-size: 0.7rem;
+  letter-spacing: 0.32em;
+  opacity: 0.65;
+}
+
+.digital-world__content h2 {
+  margin: 0;
+  font-size: clamp(2rem, 9vw, 4.5rem);
+  letter-spacing: 0.12em;
+  text-shadow:
+    0 0 10px currentColor,
+    0 0 30px currentColor;
+}
+
