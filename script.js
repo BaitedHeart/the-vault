@@ -112,3 +112,15 @@ function startAccessingSequence() {
         });
     }, 400);
 }
+
+const digitalWorld = document.getElementById("digitalWorld");
+
+function enterDigitalWorld() {
+  document.body.classList.add("entering-digital-world");
+  digitalWorld.setAttribute("aria-hidden", "false");
+}
+
+setTimeout(() => {
+  enterDigitalWorld();
+}, 3000);
+
