@@ -827,3 +827,8 @@ h1 {
     opacity: 0.96;
   }
 }
+#vaultCore {
+  position: relative;
+  z-index: 100;
+  pointer-events: auto;
+}
