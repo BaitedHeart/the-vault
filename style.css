@@ -835,3 +835,23 @@ h1 {
 #crestRing {
   pointer-events: none;
 }
+
+/* =========================================
+   ACT II // DIGITAL WORLD
+   ========================================= */
+
+.digital-world {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.digital-world__content {
+  width: 100%;
+  height: 100%;
+}
+
